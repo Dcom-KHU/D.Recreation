@@ -1,0 +1,39 @@
+swagger: "2.0"
+info:
+  description: "D.Recreation"
+  version: "1.0.0"
+  title: "D.Recreation"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "sobu0715@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "11.111.111.111:1111"
+basePath: "/api"
+tags:
+- name: "user"
+  description: "유저 관련 API"
+- name: "board"
+  description: "게시판 관련 API"
+- name: "test"
+  description: "테스트 관련 API"
+schemes:
+- "https"
+- "http"
+paths:
+  /test:
+    get:
+      tags:
+        - test
+      summary : 서버 테스트
+      description : 서버 테스트
+      responses:
+        '200':
+          description: 서버 ON
+          schema:
+            type: object
+            properties:
+              test:
+                type: boolean
+                description: 서버 ON 여부
