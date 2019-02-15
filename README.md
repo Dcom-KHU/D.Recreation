@@ -22,4 +22,4 @@
 - 이상형 월드컵
 
 ## 제작 팀
-WDYGA (Why Don't You Go Army?)
+WYDGA (Why You Don't Go Army?)
