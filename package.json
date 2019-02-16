@@ -25,9 +25,14 @@
   "homepage": "https://github.com/JustKode/Node_Skeleton#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "dotenv": "^6.1.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
     "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
     "nuxt": "^2.3.4",
     "swagger-ui-express": "^4.0.1",
     "yamljs": "^0.3.0"
