@@ -59,3 +59,6 @@ typings/
 
 # nuxt.js build output
 .nuxt
+
+# WebStorm related folder
+.idea
