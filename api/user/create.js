@@ -24,7 +24,7 @@ exports.Create=(req,res)=>{
                 connection.query(`select * from user where USERID=\'${userId}\'`)
                     .then((err,result,fields)=>{
                         if(err) throw err
-                        if(result){
+                        if(result[0]!=null){
                             return Promise.reject({
                                 code:'user_already_exists',
                                 message:'User already exists'
@@ -34,7 +34,7 @@ exports.Create=(req,res)=>{
                 connection.query(`select * from user where EMAIL=\'${email}\'`)
                     .then((err,result,fields)=>{
                         if(err) throw err
-                        if(result){
+                        if(result[0]!=null){
                             return Promise.reject({
                                 code:'user_already_exists',
                                 message:'User already exists'
@@ -73,7 +73,7 @@ exports.Create=(req,res)=>{
         .then(UserCheck)
         .then(SignUp)
         .then(()=>{
-            res.status(200).json({message:'Complete sign up'})
+            res.status(200).json({message:'SignUp Complete'})
         })
         .catch((err)=>{
             res.status(500).json(err | err.message)
