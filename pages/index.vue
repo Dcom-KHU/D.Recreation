@@ -25,24 +25,35 @@ export default {
         font-size: 150px;
         color: white;
     }
-    div.main-container {
-        width: 100%;
-        height: 500px;
-        background-color: #007aff;
-        padding: 10px 0;
-        position: relative;
+    @media screen and (min-width: 891px) {
+        div.main-container {
+            width: 100%;
+            height: 500px;
+            background-color: #007aff;
+            position: relative;
+        }
+        div.center-left{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+        div.center-right{
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
     }
-    div.center-left{
-        position: absolute;
-        top: 50%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-    }
-    div.center-right{
-        position: absolute;
-        top: 50%;
-        left: 70%;
-        transform: translate(-50%, -50%);
+    @media screen and (max-width: 890px) {
+        div.main-container {
+            width: 100%;
+            height: 400px;
+            background-color: #007aff;
+            padding-top: 100px;
+            text-align: center;
+            box-sizing: border-box;
+        }
     }
     div.title {
         font-weight: bold;
