@@ -24,11 +24,16 @@ export default {
         height: 150px;
         font-size: 150px;
         color: white;
+        transition: 0.4s;
+    }
+    i:hover {
+        height: 200px;
+        font-size: 200px;
     }
     @media screen and (min-width: 891px) {
         div.main-container {
             width: 100%;
-            height: 500px;
+            height: 600px;
             background-color: #007aff;
             position: relative;
         }
@@ -39,6 +44,7 @@ export default {
             transform: translate(-50%, -50%);
         }
         div.center-right{
+            margin-top: 1em;
             position: absolute;
             top: 50%;
             left: 70%;
@@ -48,7 +54,7 @@ export default {
     @media screen and (max-width: 890px) {
         div.main-container {
             width: 100%;
-            height: 400px;
+            height: 500px;
             background-color: #007aff;
             padding-top: 100px;
             text-align: center;
